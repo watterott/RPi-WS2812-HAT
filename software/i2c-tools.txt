@@ -1,0 +1,26 @@
+* Activate I2C:
+
+    ```
+    $ sudo modprobe i2c_bcm2708 baudrate=400000
+    $ sudo modprobe i2c-dev
+    ```
+
+* Install i2c-tools:
+
+    ```
+    $ sudo apt-get install i2c-tools
+    ```
+
+* Test I2C bus:
+
+    ```
+    $ sudo i2cdetect -y 1
+    ```
+
+* Set first LED to red (r=0x7F g=0x00 b=0x00) and second to blue (r=0x00 g=0x00 b=0x7F):
+
+    ```
+    $ sudo i2cset -y 1 0x20 0x00; sudo i2cset -y 1 0x20 0x7F; sudo i2cset -y 1 0x20 0x00; sudo i2cset -y 1 0x20 0x00;
+
+    $ sudo i2cset -y 1 0x20 0x01; sudo i2cset -y 1 0x20 0x00; sudo i2cset -y 1 0x20 0x00; sudo i2cset -y 1 0x20 0x7F;
+    ```
