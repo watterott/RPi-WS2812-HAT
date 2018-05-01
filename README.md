@@ -9,7 +9,4 @@ WS2812B intelligent RGB-LED 8x8 Matrix HAT (Hardware Attached on Top) for Raspbe
 * microUSB connector
 * ID EEPROM
 * [Raspberry Pi HAT](https://github.com/raspberrypi/hats) compatible (40 pin connector)
-
-
-## Shop
-* [RPi-WS2812-HAT](http://www.watterott.com/en/RPi-WS2812-HAT)
+* **[Documentation on learn.watterott.com](http://learn.watterott.com/rpi-ws2812-hat/)**
